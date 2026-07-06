@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register Page</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <h1>Register a New Account</h1>
+    <section>
+        <p>To create a new account, please fill out the registration form below. Ensure that you choose a strong password that meets the security requirements. <br>
+            Your username should be unique and between 5 to 18 characters long. <br>
+            Your password should be between 12 to 15 characters long and include a mix of uppercase letters, lowercase letters, numbers, and special characters. <br>
+            If you have any questions or need assistance, please contact the system administrator.
+        </p>
+    </section>
+
+    <aside>
+        <p>Contact information: alakhemphomane@gmail.com.</p>
+    </aside>
+
+    <hr>
+    
+    <section>
+    <form action="/register" method="post">
+        <label for="username">Create a username:</label>
+        <input type="text" id="username" name="username" minlength="5" maxlength="18" placeholder="Username" required>
+        <br>
+        <label for="password">Enter a strong Password:</label>
+        <input type="password" id="password" name="password" minlength="12" maxlength="15" placeholder="Password" required>
+        <br>
+        <button type="submit">Create Account</button>
+    </form> 
+    </section>
+    
+</body>
+</html>

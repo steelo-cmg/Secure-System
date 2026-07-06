@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <h1>Welcome to the Login Page</h1>
+    <section>
+        <p>If you already have an account, please log in below. If you don't have an account yet, please go back to the home page and register first.
+            Ensure that you enter the correct username and password that you created during the registration process. <br>
+            If you have forgotten your password, please contact the system administrator for assistance. <br>
+        </p>
+    </section>
+    <aside>
+        <p>Contact information: alakhemphomane@gmail.com.</p>
+    </aside>
+
+    <hr>
+    
+    <form action="/login" method="post">
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" minlength="5" maxlength="18" placeholder="Username" required>
+        <br>
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" minlength="12" maxlength="15" placeholder="Password" required>
+        <br>
+        <button type="submit">Login</button>
+    </form>
+</body>
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <h1>Welcome to the Dashboard, {{ login_name }}!</h1>
+    <p> {{ message }} </p>
+    <p> Thank you for logging in! Alakhe is happy to see you here! Now, would you like to see if the <br>
+        password you enter is strong enough? If so, please click the button below to check your password strength.<br>
+        It will be compared to a <b>dictionary of common passwords</b> to see if it is strong enough!<br>
+    </p>
+    <hr>
+
+    <a href="/password">Check Password Strength</a>
+
+</body>
+</html>

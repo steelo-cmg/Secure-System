@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Secure Login System</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+    <h1>Secure Login System</h1>
+    <hr>
+
+    <section>
+
+    <h2>Welcome to the Secure Login System</h2>
+    <p>This is a simple login system that uses bcrypt for password hashing and salting. The system is created by <br>
+        <b>Alakhe Ngalo</b>. It is designed to provide a secure way for users to register and log in to their accounts, <br>
+        while also ensuring that if their passwords would accidentally be leaked, they would be protected by the hashing and salting process.<br>
+        None of the data that will be stored will contain any sensitive information about the users.<br>
+    </p>
+    </section>
+
+    <h3>What will happen to the passwords?</h3>
+    <p>After users register, the application analyzes the strength of their chosen password by comparing it against a dictionary of common passwords. <br>
+     Passwords that are recovered demonstrate why predictable passwords are insecure
+    </p>
+
+    <fig>
+        <img src="https://images7.alphacoders.com/101/1010066.jpg" alt="Cybersecurity illustration showing a hooded figure and data breach alerts" width="500">
+        <figcaption>Every secure login is a step toward protecting sensitive information.</figcaption>
+    </fig>
+
+    <article>
+        <h3>What is a Dictionary Attack?</h3>
+        <p>A dictionary attack is a cyberattack where hackers use automated software to crack passwords by systematically testing a large, predefined<br>
+           list of likely words and phrases. Because people often use simple, predictable passwords, these attacks are much faster and more efficient <br>
+           than guessing random character combinations.
+        </p>
+    </article>
+
+    <hr>
+
+    <main>
+    <h3>Why do we need strong passwords?</h3>
+    <p>Strong passwords are essential for protecting sensitive information and preventing unauthorized access to accounts. <br>
+        They help safeguard personal data, financial information, and online identities from cyber threats. <br>
+        A strong password typically includes a mix of uppercase and lowercase letters, numbers, and special characters, making it difficult for attackers to guess or crack.<br>
+        By using strong passwords, individuals can significantly reduce the risk of identity theft, data breaches, and other security incidents.<br>
+    </p>
+    </main>
+
+    <hr>
+
+    <section>
+        <h4>Tips for Creating Strong Passwords:</h4>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTYKqN5_tkTTRaDwgR1uJ3cKaVO312xORhaPqJJQiPgTA&s=10" alt="Tips for creating strong passwords" width="500">
+        <ul>
+            <li>Use a combination of uppercase and lowercase letters, numbers, and special characters.</li>
+            <li>Avoid using easily guessable information such as names, birthdays, or common words.</li>
+            <li>Make your password at least 12 characters long.</li>
+            <li>Consider using a passphrase made up of random words or a sentence that is easy for you to remember but hard for others to guess.</li>
+            <li>Use a password manager to generate and store complex passwords securely.</li>
+        </ul>
+    </section>
+
+    <hr>
+
+    <section>
+        <h4>Get Started:</h4>
+        <p>To begin using the Secure Login System, please choose one of the following options below,
+            if you do not have an account, please register first before logging in. <br>
+            Once you have registered, you can log in to access the system and you will receive a message! <br>
+            <b>Thank you for participating in this educational project!</b> <br>
+        </p>
+    </section>
+
+    <div>
+    <a href="/register">Register</a>
+    <a href="/login">Login</a>
+    </div>
+    
+</body>
+</html>
